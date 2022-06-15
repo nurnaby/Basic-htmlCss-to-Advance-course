@@ -19,6 +19,7 @@ body {
 img {
     width: 100%;
     height: 100%;
+    transition: transform 2s;
 }
 
 .card_inner {
@@ -40,4 +41,114 @@ img {
     height: 100%;
     visibility: visible;
     opacity: 1;
+}
+
+.card_group {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 300px;
+    height: 200px;
+}
+
+.card_one {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_contant1 {
+    position: absolute;
+    top: 0;
+    left: -200%;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(190, 223, 247, 0.8);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+.card_one:hover .card_contant1 {
+    left: 0;
+}
+
+.card_two {
+    background-color: rgb(80, 208, 240);
+    position: relative;
+    overflow: hidden;
+}
+
+.card_contant2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    margin: auto;
+    color: #fff;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    z-index: -1;
+    transform: scale(0);
+    transition: all .4s;
+}
+
+.card_two:hover .card_contant2 {
+    z-index: 1;
+    transform: scale(1);
+}
+
+.card_therr {
+    background-color: orange;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card_therr:hover img {
+    transform: scale(1.3);
+}
+
+.card_contant3 h3 {
+    margin: 0;
+}
+
+.card_contant3 p {
+    margin: 0;
+}
+
+.card_contant3 {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    z-index: -1;
+    transform: scale(0);
+    transition: all .4s;
+}
+
+.card_therr:hover .card_contant3 {
+    z-index: 1;
+    transform: scale(1);
+}
+
+.card_4 {
+    overflow: hidden;
+    transition: transform 2s;
+}
+
+.card_4:hover img {
+    transform: scale(1.3);
 }
