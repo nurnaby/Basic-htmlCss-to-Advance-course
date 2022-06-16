@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    ;
 }
 
 header {
@@ -20,4 +19,43 @@ header {
     box-shadow: 0 5px 25px rgb(0 0 0/20%);
     padding: 0 100px;
     transition: 0.6s;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header .navigation {
+    position: relative;
+    line-height: 75px;
+}
+
+header .navigation .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    user-select: none;
+}
+
+.menu-item>a {
+    color: #fff;
+    font-size: 1em;
+    margin: 20px;
+    padding: 25px 0;
+    text-decoration: none;
+}
+
+.menu-item>a:hover {
+    color: #469DFF;
+    transition: 0.5s;
+}
+
+.menu-item .sub_menu {
+    position: absolute;
 }
